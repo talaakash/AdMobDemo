@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385931A32BEA0F9700D03D01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931A22BEA0F9700D03D01 /* AppDelegate.swift */; };
+		385931A72BEA0F9700D03D01 /* BannerAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931A62BEA0F9700D03D01 /* BannerAdVC.swift */; };
+		385931AA2BEA0F9700D03D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385931A82BEA0F9700D03D01 /* Main.storyboard */; };
+		385931AC2BEA0F9900D03D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385931AB2BEA0F9900D03D01 /* Assets.xcassets */; };
+		385931AF2BEA0F9900D03D01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385931AD2BEA0F9900D03D01 /* LaunchScreen.storyboard */; };
+		385931BD2BEA17BB00D03D01 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931BC2BEA17BB00D03D01 /* Constant.swift */; };
+		385931C12BEA3D7300D03D01 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931C02BEA3D7300D03D01 /* HomeVC.swift */; };
+		385931C32BEA3EBC00D03D01 /* InterstitialAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931C22BEA3EBC00D03D01 /* InterstitialAdVC.swift */; };
+		385931C52BEA48CF00D03D01 /* RewardAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931C42BEA48CF00D03D01 /* RewardAdVC.swift */; };
+		385931C72BEA4C2000D03D01 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931C62BEA4C2000D03D01 /* ToastWindow.swift */; };
+		385931C92BEA520B00D03D01 /* NativeAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931C82BEA520B00D03D01 /* NativeAdVC.swift */; };
+		385931CE2BEA599A00D03D01 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931CC2BEA599A00D03D01 /* ColorCell.swift */; };
+		385931CF2BEA599A00D03D01 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385931CD2BEA599A00D03D01 /* ColorCell.xib */; };
+		385931D92BEA651C00D03D01 /* GoogleAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385931D82BEA651C00D03D01 /* GoogleAdManager.swift */; };
+		38D685062BF1DC7C0081D4E3 /* ReleaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D685052BF1DC7C0081D4E3 /* ReleaseConstant.swift */; };
+		38D685082BF246DF0081D4E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38D685072BF246DF0081D4E3 /* GoogleService-Info.plist */; };
+		38D995B62BECCBFE00D778AB /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D995B42BECCBFE00D778AB /* NativeAdCell.swift */; };
+		38D995B72BECCBFE00D778AB /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D995B52BECCBFE00D778AB /* NativeAdCell.xib */; };
+		38D995C12BECE2C100D778AB /* NativeAddLargeSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D995C02BECE2C100D778AB /* NativeAddLargeSize.xib */; };
+		38D995C42BECE2D900D778AB /* NativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D995C22BECE2D900D778AB /* NativeAd.swift */; };
+		38D995C52BECE2D900D778AB /* NativeAd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D995C32BECE2D900D778AB /* NativeAd.xib */; };
+		38D995C92BECFA8F00D778AB /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D995C82BECFA8F00D778AB /* AdManager.swift */; };
+		595E55F7FBF32FD667DAD01B /* Pods_GoogleAdMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF7C33E5A05E99C9B738254 /* Pods_GoogleAdMob.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3859319F2BEA0F9700D03D01 /* GoogleAdMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAdMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		385931A22BEA0F9700D03D01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		385931A62BEA0F9700D03D01 /* BannerAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdVC.swift; sourceTree = "<group>"; };
+		385931A92BEA0F9700D03D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		385931AB2BEA0F9900D03D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385931AE2BEA0F9900D03D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385931B02BEA0F9900D03D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385931BC2BEA17BB00D03D01 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		385931C02BEA3D7300D03D01 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		385931C22BEA3EBC00D03D01 /* InterstitialAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdVC.swift; sourceTree = "<group>"; };
+		385931C42BEA48CF00D03D01 /* RewardAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdVC.swift; sourceTree = "<group>"; };
+		385931C62BEA4C2000D03D01 /* ToastWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
+		385931C82BEA520B00D03D01 /* NativeAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdVC.swift; sourceTree = "<group>"; };
+		385931CC2BEA599A00D03D01 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		385931CD2BEA599A00D03D01 /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
+		385931D82BEA651C00D03D01 /* GoogleAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdManager.swift; sourceTree = "<group>"; };
+		38D685052BF1DC7C0081D4E3 /* ReleaseConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseConstant.swift; sourceTree = "<group>"; };
+		38D685072BF246DF0081D4E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38D995B42BECCBFE00D778AB /* NativeAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
+		38D995B52BECCBFE00D778AB /* NativeAdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
+		38D995C02BECE2C100D778AB /* NativeAddLargeSize.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAddLargeSize.xib; sourceTree = "<group>"; };
+		38D995C22BECE2D900D778AB /* NativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAd.swift; sourceTree = "<group>"; };
+		38D995C32BECE2D900D778AB /* NativeAd.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAd.xib; sourceTree = "<group>"; };
+		38D995C82BECFA8F00D778AB /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		D4B42D0328D3E05B1F8670C4 /* Pods-GoogleAdMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdMob.release.xcconfig"; path = "Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob.release.xcconfig"; sourceTree = "<group>"; };
+		E9728638C44B189496761048 /* Pods-GoogleAdMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAdMob.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF7C33E5A05E99C9B738254 /* Pods_GoogleAdMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAdMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3859319C2BEA0F9700D03D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595E55F7FBF32FD667DAD01B /* Pods_GoogleAdMob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		243791773748DF8F56F33C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF7C33E5A05E99C9B738254 /* Pods_GoogleAdMob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30464935F03C7892B5C58427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9728638C44B189496761048 /* Pods-GoogleAdMob.debug.xcconfig */,
+				D4B42D0328D3E05B1F8670C4 /* Pods-GoogleAdMob.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		385931962BEA0F9700D03D01 = {
+			isa = PBXGroup;
+			children = (
+				385931A12BEA0F9700D03D01 /* GoogleAdMob */,
+				385931A02BEA0F9700D03D01 /* Products */,
+				30464935F03C7892B5C58427 /* Pods */,
+				243791773748DF8F56F33C2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		385931A02BEA0F9700D03D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3859319F2BEA0F9700D03D01 /* GoogleAdMob.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385931A12BEA0F9700D03D01 /* GoogleAdMob */ = {
+			isa = PBXGroup;
+			children = (
+				385931BB2BEA116F00D03D01 /* AppFile */,
+				385931BA2BEA116800D03D01 /* Assets */,
+				385931CB2BEA597900D03D01 /* Xibs */,
+				385931B92BEA116000D03D01 /* HelperClass */,
+				385931B82BEA115900D03D01 /* StoryBoard */,
+				385931B72BEA114F00D03D01 /* ViewControllers */,
+				385931B62BEA114400D03D01 /* Extention */,
+				385931B02BEA0F9900D03D01 /* Info.plist */,
+				38D685072BF246DF0081D4E3 /* GoogleService-Info.plist */,
+			);
+			path = GoogleAdMob;
+			sourceTree = "<group>";
+		};
+		385931B62BEA114400D03D01 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		385931B72BEA114F00D03D01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				385931C02BEA3D7300D03D01 /* HomeVC.swift */,
+				385931A62BEA0F9700D03D01 /* BannerAdVC.swift */,
+				385931C22BEA3EBC00D03D01 /* InterstitialAdVC.swift */,
+				385931C42BEA48CF00D03D01 /* RewardAdVC.swift */,
+				385931C82BEA520B00D03D01 /* NativeAdVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		385931B82BEA115900D03D01 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				385931A82BEA0F9700D03D01 /* Main.storyboard */,
+				385931AD2BEA0F9900D03D01 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		385931B92BEA116000D03D01 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				385931C62BEA4C2000D03D01 /* ToastWindow.swift */,
+				385931D82BEA651C00D03D01 /* GoogleAdManager.swift */,
+				38D995C82BECFA8F00D778AB /* AdManager.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		385931BA2BEA116800D03D01 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				385931AB2BEA0F9900D03D01 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		385931BB2BEA116F00D03D01 /* AppFile */ = {
+			isa = PBXGroup;
+			children = (
+				385931A22BEA0F9700D03D01 /* AppDelegate.swift */,
+				385931BC2BEA17BB00D03D01 /* Constant.swift */,
+				38D685052BF1DC7C0081D4E3 /* ReleaseConstant.swift */,
+			);
+			path = AppFile;
+			sourceTree = "<group>";
+		};
+		385931CB2BEA597900D03D01 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				385931CC2BEA599A00D03D01 /* ColorCell.swift */,
+				385931CD2BEA599A00D03D01 /* ColorCell.xib */,
+				38D995B42BECCBFE00D778AB /* NativeAdCell.swift */,
+				38D995B52BECCBFE00D778AB /* NativeAdCell.xib */,
+				38D995C22BECE2D900D778AB /* NativeAd.swift */,
+				38D995C32BECE2D900D778AB /* NativeAd.xib */,
+				38D995C02BECE2C100D778AB /* NativeAddLargeSize.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3859319E2BEA0F9700D03D01 /* GoogleAdMob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385931B32BEA0F9900D03D01 /* Build configuration list for PBXNativeTarget "GoogleAdMob" */;
+			buildPhases = (
+				027CFEA62AC51A08F31D7C4B /* [CP] Check Pods Manifest.lock */,
+				3859319B2BEA0F9700D03D01 /* Sources */,
+				3859319C2BEA0F9700D03D01 /* Frameworks */,
+				3859319D2BEA0F9700D03D01 /* Resources */,
+				E5FEB81FC1FCBE9FC6D2FED8 /* [CP] Copy Pods Resources */,
+				BD92D370641F82B8690D3735 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleAdMob;
+			productName = GoogleAdMob;
+			productReference = 3859319F2BEA0F9700D03D01 /* GoogleAdMob.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385931972BEA0F9700D03D01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					3859319E2BEA0F9700D03D01 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 3859319A2BEA0F9700D03D01 /* Build configuration list for PBXProject "GoogleAdMob" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 385931962BEA0F9700D03D01;
+			productRefGroup = 385931A02BEA0F9700D03D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3859319E2BEA0F9700D03D01 /* GoogleAdMob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3859319D2BEA0F9700D03D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385931CF2BEA599A00D03D01 /* ColorCell.xib in Resources */,
+				38D995C52BECE2D900D778AB /* NativeAd.xib in Resources */,
+				38D995C12BECE2C100D778AB /* NativeAddLargeSize.xib in Resources */,
+				38D685082BF246DF0081D4E3 /* GoogleService-Info.plist in Resources */,
+				385931AF2BEA0F9900D03D01 /* LaunchScreen.storyboard in Resources */,
+				385931AC2BEA0F9900D03D01 /* Assets.xcassets in Resources */,
+				38D995B72BECCBFE00D778AB /* NativeAdCell.xib in Resources */,
+				385931AA2BEA0F9700D03D01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		027CFEA62AC51A08F31D7C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAdMob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD92D370641F82B8690D3735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FEB81FC1FCBE9FC6D2FED8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAdMob/Pods-GoogleAdMob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3859319B2BEA0F9700D03D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D995C42BECE2D900D778AB /* NativeAd.swift in Sources */,
+				38D685062BF1DC7C0081D4E3 /* ReleaseConstant.swift in Sources */,
+				385931A72BEA0F9700D03D01 /* BannerAdVC.swift in Sources */,
+				385931C52BEA48CF00D03D01 /* RewardAdVC.swift in Sources */,
+				385931C32BEA3EBC00D03D01 /* InterstitialAdVC.swift in Sources */,
+				38D995C92BECFA8F00D778AB /* AdManager.swift in Sources */,
+				385931C12BEA3D7300D03D01 /* HomeVC.swift in Sources */,
+				385931CE2BEA599A00D03D01 /* ColorCell.swift in Sources */,
+				385931BD2BEA17BB00D03D01 /* Constant.swift in Sources */,
+				385931C92BEA520B00D03D01 /* NativeAdVC.swift in Sources */,
+				385931A32BEA0F9700D03D01 /* AppDelegate.swift in Sources */,
+				385931D92BEA651C00D03D01 /* GoogleAdManager.swift in Sources */,
+				38D995B62BECCBFE00D778AB /* NativeAdCell.swift in Sources */,
+				385931C72BEA4C2000D03D01 /* ToastWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		385931A82BEA0F9700D03D01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385931A92BEA0F9700D03D01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		385931AD2BEA0F9900D03D01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385931AE2BEA0F9900D03D01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385931B12BEA0F9900D03D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		385931B22BEA0F9900D03D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385931B42BEA0F9900D03D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9728638C44B189496761048 /* Pods-GoogleAdMob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleAdMob/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = akash.GoogleAdMob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385931B52BEA0F9900D03D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B42D0328D3E05B1F8670C4 /* Pods-GoogleAdMob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleAdMob/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = akash.GoogleAdMob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3859319A2BEA0F9700D03D01 /* Build configuration list for PBXProject "GoogleAdMob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385931B12BEA0F9900D03D01 /* Debug */,
+				385931B22BEA0F9900D03D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385931B32BEA0F9900D03D01 /* Build configuration list for PBXNativeTarget "GoogleAdMob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385931B42BEA0F9900D03D01 /* Debug */,
+				385931B52BEA0F9900D03D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385931972BEA0F9700D03D01 /* Project object */;
+}

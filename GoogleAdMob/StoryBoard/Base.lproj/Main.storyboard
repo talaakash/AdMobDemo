@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A2L-dq-ouT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JZk-3V-k8m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A2L-dq-ouT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vdu-hv-gAz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tYq-QE-Mnd" kind="relationship" relationship="rootViewController" id="9t8-XT-3tj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-oq-qFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="NoF-5W-M2K">
+            <objects>
+                <viewController id="tYq-QE-Mnd" customClass="HomeVC" customModule="GoogleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ENd-df-6Ic">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDH-Hs-ZLn">
+                                <rect key="frame" x="145" y="408.66666666666669" width="103" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Banner Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bannerAdBtnCLicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="uyf-9M-ZIz"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-4B-saY">
+                                <rect key="frame" x="134.66666666666666" y="475.66666666666669" width="123.99999999999997" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Interstitial Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="interstitialAdBtnClicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="deR-be-92H"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-h7-SD5">
+                                <rect key="frame" x="143.66666666666666" y="341.66666666666669" width="106" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reward Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rewardAdBtnClicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="tUE-il-IR1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DX-Gg-F4I">
+                                <rect key="frame" x="148" y="542.66666666666663" width="97.333333333333314" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Native Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nativeAdBtnClicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="VMP-rN-pkJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z30-im-mUD">
+                                <rect key="frame" x="112" y="145" width="169" height="35"/>
+                                <color key="tintColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present Intertial Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentInterstitialAdClicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="rC4-Oz-HzQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLb-NY-NGQ">
+                                <rect key="frame" x="102.66666666666669" y="196" width="188" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present Rewarded Ad">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentRewardedAdClicked:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="Ws2-Ht-Ye5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lw-d0-XQz">
+                                <rect key="frame" x="84.333333333333329" y="247" width="224.66666666666669" height="35"/>
+                                <color key="tintColor" red="0.95686274510000002" green="0.91764705879999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present Rewarded Intertial">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentRewardedIntertialAd:" destination="tYq-QE-Mnd" eventType="touchUpInside" id="fFk-2g-oxX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wGX-eP-AKe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fgy-h7-SD5" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="CBf-rR-LMs"/>
+                            <constraint firstItem="4DX-Gg-F4I" firstAttribute="top" secondItem="OLI-4B-saY" secondAttribute="bottom" constant="32" id="HYL-1m-EAD"/>
+                            <constraint firstItem="fLb-NY-NGQ" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="INh-h1-3O7"/>
+                            <constraint firstItem="4DX-Gg-F4I" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="M1U-wB-mFa"/>
+                            <constraint firstItem="Z30-im-mUD" firstAttribute="top" secondItem="wGX-eP-AKe" secondAttribute="top" constant="42" id="PBj-ls-S2u"/>
+                            <constraint firstItem="fLb-NY-NGQ" firstAttribute="top" secondItem="Z30-im-mUD" secondAttribute="bottom" constant="16" id="QsS-bJ-XOt"/>
+                            <constraint firstItem="OLI-4B-saY" firstAttribute="top" secondItem="dDH-Hs-ZLn" secondAttribute="bottom" constant="32" id="RKl-oz-Oud"/>
+                            <constraint firstItem="dDH-Hs-ZLn" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="VR0-nc-rcp"/>
+                            <constraint firstItem="dDH-Hs-ZLn" firstAttribute="centerY" secondItem="ENd-df-6Ic" secondAttribute="centerY" id="ape-lQ-pEK"/>
+                            <constraint firstItem="dDH-Hs-ZLn" firstAttribute="top" secondItem="fgy-h7-SD5" secondAttribute="bottom" constant="32" id="flF-yW-tUe"/>
+                            <constraint firstItem="OLI-4B-saY" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="pxG-lX-4Js"/>
+                            <constraint firstItem="Z30-im-mUD" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="qaG-K1-38r"/>
+                            <constraint firstItem="1Lw-d0-XQz" firstAttribute="centerX" secondItem="ENd-df-6Ic" secondAttribute="centerX" id="t8k-Aj-7Hv"/>
+                            <constraint firstItem="1Lw-d0-XQz" firstAttribute="top" secondItem="fLb-NY-NGQ" secondAttribute="bottom" constant="16" id="vaA-OC-ZgW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JmR-EV-nn4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeU-PI-oB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="4"/>
+        </scene>
+        <!--Banner Ad-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BannerAdVC" id="BYZ-38-t0r" customClass="BannerAdVC" customModule="GoogleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-vR-WCw" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="768" width="393" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OYO-OC-dmr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydh-vR-WCw" secondAttribute="trailing" id="dET-bl-67U"/>
+                            <constraint firstItem="ydh-vR-WCw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dOR-OW-kKz"/>
+                            <constraint firstItem="ydh-vR-WCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEv-cp-60Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Banner Ad" id="U25-gU-Lxb"/>
+                    <connections>
+                        <outlet property="banner" destination="ydh-vR-WCw" id="k0Z-Ov-Mnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="4"/>
+        </scene>
+        <!--Interstitial Ad-->
+        <scene sceneID="OIz-Ma-VvC">
+            <objects>
+                <viewController storyboardIdentifier="InterstitialAdVC" id="7uf-68-FXk" customClass="InterstitialAdVC" customModule="GoogleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDT-v8-AUN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Kav-fz-GjQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interstitial Ad" id="CeN-hm-JIa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLy-go-OFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="4"/>
+        </scene>
+        <!--Reward AdVC-->
+        <scene sceneID="Rro-cl-NQd">
+            <objects>
+                <viewController storyboardIdentifier="RewardAdVC" id="Ee2-Cv-sGy" customClass="RewardAdVC" customModule="GoogleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLq-a4-Oc3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2De-SK-Af2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmb-Zb-lNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="4"/>
+        </scene>
+        <!--Native AdVC-->
+        <scene sceneID="yhz-Wd-pcH">
+            <objects>
+                <viewController storyboardIdentifier="NativeAdVC" id="SIQ-G1-MZC" customClass="NativeAdVC" customModule="GoogleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUQ-6o-t0i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-dn-sXJ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SIQ-G1-MZC" id="OCP-1Y-ISb"/>
+                                    <outlet property="delegate" destination="SIQ-G1-MZC" id="dXc-rn-zuO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Bl-sF-Afq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z9I-dn-sXJ" firstAttribute="top" secondItem="1Bl-sF-Afq" secondAttribute="top" id="BLF-5F-fXj"/>
+                            <constraint firstItem="1Bl-sF-Afq" firstAttribute="trailing" secondItem="Z9I-dn-sXJ" secondAttribute="trailing" id="IKQ-B2-p2M"/>
+                            <constraint firstItem="Z9I-dn-sXJ" firstAttribute="leading" secondItem="1Bl-sF-Afq" secondAttribute="leading" id="eR1-6u-OK3"/>
+                            <constraint firstItem="1Bl-sF-Afq" firstAttribute="bottom" secondItem="Z9I-dn-sXJ" secondAttribute="bottom" id="h8T-LM-Lcx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6SR-MX-zcg"/>
+                    <connections>
+                        <outlet property="nativeAdTbl" destination="Z9I-dn-sXJ" id="USe-5u-5sx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HrG-VO-dVk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4282" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

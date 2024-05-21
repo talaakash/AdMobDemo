@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Colors" rowHeight="121" id="KGk-i7-Jjw" customClass="ColorCell" customModule="GoogleAdMob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-ph-VBs">
+                        <rect key="frame" x="135" y="50" width="86" height="71"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="110-wa-eAm">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="tMT-Lv-zmy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="110-wa-eAm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="83c-h2-rwP"/>
+                    <constraint firstItem="EYi-ph-VBs" firstAttribute="top" secondItem="110-wa-eAm" secondAttribute="bottom" id="9oz-Qx-c8y"/>
+                    <constraint firstItem="EYi-ph-VBs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Q9z-C5-53S"/>
+                    <constraint firstAttribute="trailing" secondItem="110-wa-eAm" secondAttribute="trailing" id="b21-t2-UC4"/>
+                    <constraint firstAttribute="bottom" secondItem="EYi-ph-VBs" secondAttribute="bottom" id="rr9-3w-dO1"/>
+                    <constraint firstItem="110-wa-eAm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yls-X3-4Tb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="colorCode" destination="EYi-ph-VBs" id="7CU-7p-g8u"/>
+                <outlet property="colorView" destination="110-wa-eAm" id="NfC-Av-yjF"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="46.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
